@@ -102,6 +102,87 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+
+    let logButton = errorBtns[0];
+    logButton.addEventListener('click', ()=> {
+      console.log('Console Log Demo');
+    });
+
+    let errorButton = errorBtns[1];
+    errorButton.addEventListener('click', ()=> {
+      console.error('Console Error Demo');
+    });
+
+    let countButton = errorBtns[2];
+    countButton.addEventListener('click', ()=> {
+      console.count('Console count');
+    });
+
+    let warnButton = errorBtns[3];
+    warnButton.addEventListener('click', ()=> {
+      console.warn('Console Warn Demo');
+    });
+
+    let assertButton = errorBtns[4];
+    assertButton.addEventListener('click', ()=> {
+      console.assert(true == false);
+    });
+
+    let clearButton = errorBtns[5];
+    clearButton.addEventListener('click', ()=> {
+      console.clear();
+    });
+
+    let dirButton = errorBtns[6];
+    dirButton.addEventListener('click', ()=> {
+      console.dir(logButton);
+    });
+
+    let dirxmlButton = errorBtns[7];
+    dirxmlButton.addEventListener('click', ()=> {
+      console.dirxml(logButton);
+    });
+
+    let groupStartButton = errorBtns[8];
+    groupStartButton.addEventListener('click', ()=> {
+      console.group();
+    });
+
+    let groupEndButton = errorBtns[9];
+    groupEndButton.addEventListener('click', ()=> {
+      console.groupEnd();
+    });
+
+    let tableButton = errorBtns[10];
+    let states = [
+        {state: 'California', capital: 'Sacramento'},
+        {state: "Minnesota", capital: 'St. Paul'},
+        {state: "Texas", capital: 'Austin'}
+      ];
+    tableButton.addEventListener('click', ()=> {
+      console.table(states);
+    });
+
+    let timerStartButton = errorBtns[11];
+    timerStartButton.addEventListener('click', ()=> {
+      console.time();
+    });
+
+    let timerEndButton = errorBtns[12];
+    timerEndButton.addEventListener('click', ()=> {
+      console.timeEnd();
+    });
+
+    let traceButton = errorBtns[13];
+    traceButton.addEventListener('click', ()=> {
+      console.trace()
+    });
+
+    let globalButton = errorBtns[14];
+    globalButton.addEventListener('click', ()=> {
+      console.error(' Global Error');
+    });
+
   </script>
 </body>
 
